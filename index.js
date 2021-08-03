@@ -6,7 +6,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.send({});
+  res.send({
+      'status':false,
+      'message':'Please open /bfhl on postman'
+  });
 });
 
 app.post("/bfhl", (req, res) => {
